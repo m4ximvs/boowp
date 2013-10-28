@@ -12,7 +12,17 @@ function roots_widgets_init() {
     'before_title'  => '<h3>',
     'after_title'   => '</h3>',
   ));
-
+  
+  // Searchbox
+  register_sidebar(array(
+    'name'          => __('Searchbox', 'roots'),
+    'id'            => 'boowp-searchbox',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+  
   // 4 sidebar, 1 sidebar for each column in the footer
   register_sidebar(array(
     'name'          => __('Footer - Column 1', 'roots'),
