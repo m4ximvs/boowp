@@ -17,8 +17,18 @@
                 <?php dynamic_sidebar('sidebar-footer-col-4'); ?>
             </div>  
         </div>
-        <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
     </div>
+    
+    <nav id="boowp-footer-nav">
+        <div class="container">
+            <?php
+            if (has_nav_menu('footer-navigation')) :
+                wp_nav_menu(array('theme_location' => 'footer-navigation', 'menu_class' => 'navbar-nav nav'));
+            endif;
+            ?>
+            <p class="pull-right">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+        </div>
+    </nav>
 </footer>
 
 <?php wp_footer(); ?>
