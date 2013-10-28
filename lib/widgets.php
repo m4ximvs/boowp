@@ -13,9 +13,37 @@ function roots_widgets_init() {
     'after_title'   => '</h3>',
   ));
 
+  // 4 sidebar, 1 sidebar for each column in the footer
   register_sidebar(array(
-    'name'          => __('Footer', 'roots'),
-    'id'            => 'sidebar-footer',
+    'name'          => __('Footer - Column 1', 'roots'),
+    'id'            => 'sidebar-footer-col-1',
+    'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+  
+  register_sidebar(array(
+    'name'          => __('Footer - Column 2', 'roots'),
+    'id'            => 'sidebar-footer-col-2',
+    'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+  
+  register_sidebar(array(
+    'name'          => __('Footer  - Column 3', 'roots'),
+    'id'            => 'sidebar-footer-col-3',
+    'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+  
+  register_sidebar(array(
+    'name'          => __('Footer - Column 4', 'roots'),
+    'id'            => 'sidebar-footer-col-4',
     'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
     'after_widget'  => '</div></section>',
     'before_title'  => '<h3>',
