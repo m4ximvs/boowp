@@ -23,7 +23,7 @@
         <div class="container">
             <?php
             if (has_nav_menu('footer-navigation')) :
-                wp_nav_menu(array('theme_location' => 'footer-navigation', 'menu_class' => 'navbar-nav nav'));
+                wp_nav_menu(array('theme_location' => 'footer-navigation', 'menu_class' => 'pull-left'));
             endif;
             ?>
             <p class="pull-right">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
