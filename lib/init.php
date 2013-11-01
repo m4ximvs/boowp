@@ -21,6 +21,13 @@ function roots_setup() {
 
   // Tell the TinyMCE editor to use a custom stylesheet
   add_editor_style('/assets/css/editor-style.css');
+  
+  //Add Image Size
+  add_image_size( 'boowp-carousel', '1920', '550', true ); 
+  add_image_size( 'boowp-thumbnail', '384', '384', true ); 
+  add_image_size( 'boowp-article', '768', '384', true );
+  add_image_size( 'boowp-lightbox', '1600', '0', false); 
+  
 }
 add_action('after_setup_theme', 'roots_setup');
 

@@ -41,7 +41,7 @@ function roots_gallery($attr) {
     'icontag'    => '',
     'captiontag' => '',
     'columns'    => 4,
-    'size'       => 'thumbnail',
+    'size'       => 'boowp-thumbnail',
     'include'    => '',
     'exclude'    => '',
     'link'       => 'file'
@@ -49,7 +49,7 @@ function roots_gallery($attr) {
 
   $id = intval($id);
   $columns = (12 % $columns == 0) ? $columns: 4;
-  $grid = sprintf('col-sm-%1$s col-lg-%1$s', 12/$columns);
+  $grid = sprintf('col-sm-%1$s col-lg-%1$s col-xs-6', 12/$columns);
 
   if ($order === 'RAND') {
     $orderby = 'none';
