@@ -8,6 +8,7 @@ module.exports = function(grunt) {
       },
       all: [
         'Gruntfile.js',
+        'addons/*.js',
         'assets/js/*.js',
         'assets/js/plugins/*.js',
         '!assets/js/scripts.min.js'
@@ -30,6 +31,7 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'assets/js/scripts.min.js': [
+            'addons/*/*.js',
             'assets/js/plugins/bootstrap/transition.js',
             'assets/js/plugins/bootstrap/alert.js',
             'assets/js/plugins/bootstrap/button.js',
