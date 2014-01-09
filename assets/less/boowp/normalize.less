@@ -4,14 +4,111 @@
  *
  */
 
+/* ==========================================================================
+   Widget
+   ========================================================================== */
+    .widget{
+        background-color:@boowp-widget-bg;
+        border-radius: @border-radius-base;
+        padding: @boowp-box-padding;
+        margin-bottom: @boowp-marge;
+        min-height:150px;
+    }
 
+    .widget h3{
+
+    }
+
+    #boowp-searchbox{
+        margin-bottom: @boowp-marge;
+    }
 
 /* ==========================================================================
-   Media Queries
+   Gallery
+   ========================================================================== */
+    .gallery-row{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+
+    .gallery-row .col-xs-6{
+        padding-top: 0;
+        padding-left:5px;
+        padding-right: 5px;
+        padding-bottom: 10px;
+
+    }
+
+    @media (min-width: @screen-sm) {
+        /* on hover effect for no-touch devices only */
+
+        .no-touch .gallery .col-xs-6 a:hover {
+            position:relative;
+            width:140%;
+            max-width:140%;
+            margin: -20%;
+            z-index:10;
+        }
+
+        .no-touch .gallery .col-xs-6 a, .gallery div.col-xs-6 a:focus {
+            width:100%;
+            height:100%;
+        }
+
+        .no-touch .gallery .col-xs-6 img{
+            position: relative;
+            width:100%;
+            z-index:1;
+        }
+    }
+
+/* ==========================================================================
+   Footer
    ========================================================================== */
 
-@media (min-width: @screen-sm) { }
+    footer{
+        background-color:@boowp-footer-bg;
+        padding-top:@boowp-marge;
+    }
 
-@media (min-width: @screen-md) { }
+    footer .col-xs-6{
+        padding-left:5px;
+        padding-right:5px;
+    }
 
-@media (min-width: @screen-lg) { }
+    footer .boowp-row{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    footer .widget{
+        margin-bottom: 10px;
+    }
+
+
+    /* ----------------------------
+       Footer navigation
+       ---------------------------- */
+
+    #boowp-footer-nav{
+        border-top: 1px solid #666;
+        background-color:#777;
+    }
+
+    #boowp-footer-nav p{
+        margin-top:@boowp-marge;
+    }
+
+    #boowp-footer-nav ul{
+        margin-top:@boowp-marge;
+        padding:0;
+        list-style: none;
+
+    }
+
+    #boowp-footer-nav ul li{
+        float: left;
+        margin-right:@boowp-marge;
+    }
+
